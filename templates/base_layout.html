@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+    <title>{% block Title %}Shop base{% endblock %}</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+
+<body>
+{% block Menu %}
+<div class="container-fluid">
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-link"><a href="{{ url_for('home') }}">Номе</a></li>
+        <li class="nav-link"><a href="{{ url_for('clothes') }}" target="_blank">Clothes</a></li>
+        <li class="nav-link"><a href="{{ url_for('shoes') }}" target="_blank">Shoes</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block Content %}
+<div class="Content">
+    <div class="row">
+        <img src="https://cdn-icons-gif.flaticon.com/9820/9820046.gif" width="50" height="50"
+             alt="home">
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="fixed-bottom">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                <a class="nav-link" href="{{ url_for('about') }}">About us</a>
+                <a class="nav-link" href="{{ url_for('contacts') }}">Contacts</a>
+            </div>
+            Copyright 2024 by <a class="reference" href="https://gb.ru/" target="_blank">HM@project</a>
+        </div>
+    </nav>
+</footer>
+{% endblock %}
+</body>
+
+</html>

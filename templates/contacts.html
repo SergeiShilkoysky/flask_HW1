@@ -1,0 +1,18 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block Content %}
+<div class="field">
+    <h3>contacts form:</h3>
+    name <input class="field" type="text" required placeholder="Input name"/> <br/>
+    email <input class="field" type="input email" placeholder="Input xxx@yyy.zzz"/> <br/>
+    birthday <input class="field" type="date"/> <br/>
+    <button type="submit" class="popper">Отправить</button>
+    <button type="reset" class="popper">Стереть</button>
+</div>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{%endblock%}

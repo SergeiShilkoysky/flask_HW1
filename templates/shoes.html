@@ -1,0 +1,19 @@
+{% extends "base_layout.html" %}
+
+{% block Title %}Products{% endblock %}
+
+{% block Content %}
+
+<div class="div">
+    <div style="height:10vh; display: flex; justify-content: left; align-items: left;">
+        <h3>{{ content }}</h3>
+        <ul>
+            <li class="nav-link"><a href="{{ url_for('shoes') }}">Женская</a></li>
+            <li class="nav-link"><a href="#">Мужская</a></li>
+            <li class="nav-link"><a href="#">Детская</a></li>
+
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

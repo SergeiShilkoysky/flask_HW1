@@ -1,0 +1,23 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}About us{% endblock %}
+
+{% block Content %}
+<div class="field">
+    <h3>About us</h3>
+    <img src="/static/image/popArt.png" class="col-12 col-md-6
+        img-fluid rounded-circle" alt="home">
+    <div>
+        <h5 class="row">В разработке принимали участие</h5>
+        <ul>
+            <li>Иванов</li>
+            <li>Петров</li>
+            <li>Сидоров</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{%endblock%}
